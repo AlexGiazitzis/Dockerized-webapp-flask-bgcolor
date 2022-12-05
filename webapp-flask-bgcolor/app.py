@@ -28,7 +28,7 @@ if __name__ == "__main__":
           "    2. As an Environment variable APP_HEX_COLOR.\n"
           "In any other case, a random color is picked.\n"
           "\n"
-          "Note 1: Color can be specified as a 3-byte hexadecimal number prefixed with the character '#' \n"
+          "Note 1: Color can be specified as a 3-byte hexadecimal number prefixed with the character '#'. \n"
           "Note 2: Command line argument precedes over environment variable.\n"
           "\n"
           "")

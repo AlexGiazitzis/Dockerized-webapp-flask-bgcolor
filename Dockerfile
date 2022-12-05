@@ -1,6 +1,6 @@
 FROM python:3.6-alpine
 
-MAINTAINER gregkoul@gmail.com
+MAINTAINER a.giazitzis@outlook.com
 
 COPY webapp-flask-bgcolor/. /opt/
 
