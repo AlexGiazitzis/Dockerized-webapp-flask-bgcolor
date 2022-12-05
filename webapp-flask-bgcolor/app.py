@@ -9,7 +9,7 @@ app = Flask(__name__)
 # Get color from Environment variable
 HEX_COLOR_FROM_ENV = os.environ.get("APP_HEX_COLOR")
 # Generate a random color
-HEX_COLOR = '#' + random.randbytes(3).hex()
+HEX_COLOR = '#' + str(random.randint(0, 2 ** 24))  # 2 ** 24 due to 3 byte hex string
 # Get dynamic title from Environment variable
 TITLE_FROM_ENV = os.environ.get('APP_TITLE')
 # Set default title
