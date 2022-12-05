@@ -9,7 +9,7 @@ app = Flask(__name__)
 # Get color from Environment variable
 HEX_COLOR_FROM_ENV = os.environ.get("APP_HEX_COLOR")
 # Generate a random color
-HEX_COLOR = '#' + str(random.randint(0, 2 ** 24))  # 2 ** 24 due to 3 byte hex string
+HEX_COLOR = '#' + hex(random.randint(0, 2 ** 24))  # 2 ** 24 due to 3 byte hex string
 # Get dynamic title from Environment variable
 TITLE_FROM_ENV = os.environ.get('APP_TITLE')
 # Set default title
@@ -18,7 +18,7 @@ TITLE = "Cloud Computing - University of West Attica"
 @app.route("/")
 def main():
     # return 'Hello'
-    return render_template('index.html', name=socket.gethostname(), color=HEX_COLOR, hex_color = hex(HEX_COLOR), title=TITLE)
+    return render_template('index.html', name=socket.gethostname(), color=HEX_COLOR, title=TITLE)
 
 
 if __name__ == "__main__":
