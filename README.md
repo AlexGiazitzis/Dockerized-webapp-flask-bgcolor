@@ -10,6 +10,7 @@ The color can be specified in two different ways:
 In any other case, a random color is generated.
 
 Note 1: Color can be specified as a 3-byte hexadecimal number prefixed with the character '#'
+
 Note 2: Command line argument precedes over environment variable.
 
 ### Dynamic Title
