@@ -52,11 +52,6 @@ if __name__ == "__main__":
     else:
         print("No command line argument or environment variable. Picking a Random Color =" + HEX_COLOR)
 
-    # Check if input color is a supported one
-    if HEX_COLOR not in color_codes:
-        print("Color not supported. Received '" + HEX_COLOR + "' expected one of " + SUPPORTED_COLORS)
-        exit(1)
-
     if args.title:
         print("Title from command line argument =" + args.title)
         TITLE = args.title
