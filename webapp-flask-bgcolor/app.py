@@ -41,7 +41,7 @@ if __name__ == "__main__":
     parser.add_argument('--title', required=False)
     args = parser.parse_args()
 
-    if args.color:
+    if args.hex_color:
         print("Color from command line argument =" + args.hex_color)
         HEX_COLOR = args.hex_color
         if COLOR_FROM_ENV:
