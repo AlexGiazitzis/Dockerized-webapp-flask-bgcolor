@@ -7,7 +7,7 @@ The color can be specified in two different ways:
   1. As a command line argument with --hex-color as the argument.
   2. As an Environment variable APP_HEX_COLOR.
     
-In any other case, a random color is picked from the list below.
+In any other case, a random color is generated.
 
 Note 1: Color can be specified as a 3-byte hexadecimal number prefixed with the character '#'
 Note 2: Command line argument precedes over environment variable.
