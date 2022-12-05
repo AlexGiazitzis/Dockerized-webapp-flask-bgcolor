@@ -18,7 +18,7 @@ TITLE = "Cloud Computing - University of West Attica"
 @app.route("/")
 def main():
     # return 'Hello'
-    return render_template('index.html', name=socket.gethostname(), color=color_codes[HEX_COLOR], title=TITLE)
+    return render_template('index.html', name=socket.gethostname(), color=HEX_COLOR, title=TITLE)
 
 
 if __name__ == "__main__":
